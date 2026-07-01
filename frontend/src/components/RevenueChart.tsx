@@ -27,11 +27,11 @@ const profitActiveDot = { r: 4, fill: '#818cf8', strokeWidth: 0 };
 
 export function RevenueChart() {
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 w-full h-full min-h-[400px] flex flex-col">
+    <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 w-full h-full min-h-100 flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-sm font-semibold text-zinc-100">Performance Overview (7 Days)</h3>
       </div>
-      <div className="w-full flex-1 min-h-[300px]">
+      <div className="w-full flex-1 min-h-75">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={chartData}

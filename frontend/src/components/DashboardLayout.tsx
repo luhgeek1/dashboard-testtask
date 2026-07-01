@@ -27,7 +27,7 @@ export function DashboardLayout() {
         </div>
       </header>
 
-      <main className="flex-1 p-4 md:p-8 max-w-[1400px] w-full mx-auto flex flex-col gap-6">
+      <main className="flex-1 p-4 md:p-8 max-w-350 w-full mx-auto flex flex-col gap-6">
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {statMetrics.map(metric => (
             <StatCard key={metric.id} metric={metric} />
